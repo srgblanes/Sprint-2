@@ -1,4 +1,23 @@
+//variables modificadas
+$primary: #5265E1;
+$secondary: #FA5959;
+$card-border-width: none;
+$card-border-radius: 5%;
+
+.btn{
+    box-shadow: 0 3px 5px lightgray;
+}
+.card{
+    margin-top: 5%;
+    box-shadow: 1px 5px 8px lightgray;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    margin-top: 15%;
+}
 
 //import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
- 

@@ -7,30 +7,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprint-2 </title>
     <link href="css/main.min.css" rel="stylesheet">
+    
 </head>
 
 <body>
+    <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!--Navbar-->
     <nav class="navbar navbar-expand-md">
-        <img src="/Imagenes/logo-bookmark.svg">
-        <div class="collapse navbar-collapse d-flex justify-content-end">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    Features
-                </li>
-                <li class="nav-item">
-                    Pricing
-                </li>
-                <li class="nav-item">
-                    Contact
-                </li>
-                <li class="nav-item">
-                    Login
-                </li>
-            </ul>
+        <div class="container">
+        <img class="navbar-brand" src="/Imagenes/logo-bookmark.svg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="Imagenes/icon-hamburger.svg" class="navbar-toggler-icon">
+          </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <span class="mx-4">
+                    FEATURES
+                </span>
+                <span class="mx-4">
+                    PRINCING
+                </span>
+                <span class="mx-4">
+                    CONCTACT
+                </span>
+                <button class="btn btn-secondary mx-4">
+                    LOGIN
+                </button> 
+        </div>
         </div>
     </nav>
-
-
+    <div class="container">
+        <div class="row justify-content-center">
+        <div class="col-12 order-md-2 col-md-5 ">
+                <img class="img-fluid" src="Imagenes/illustration-hero.svg">
+        </div>
+        <div class="col-12 col-md-5 align-self-center">
+            <h1>A Simple Bookmark Manager</h1>
+            <p>A clean and simple interface to organize your favorite websites. Open a new browser tab
+                and see your sites load instantly. Try it for free.
+            </p>
+            <button class="btn btn-primary" style="margin-right: 15px">Get it on Chrome</button>
+            <button class="btn btn-light">Get it on Firefox</button>
+            
+        </div>
+        </div>
+    </div>
+        <!-- Features-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+        <h2 style="text-align:center">Features</h2>
+        <p style="text-align:center">Our aim is to make it quick and easy for you to access your favorites websites.
+            Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+        </div>
+        <div class="col-12 col-md-10" style="margin-bottom: 5%;">
+        <ul class="nav flex-column flex-md-row nav-tabs align-items-center justify-content-center">
+            <li class="nav-item">
+               <span class="nav-link">Simple Bookmarking</span>
+            </li>
+            <li class="nav-item">
+                <span class="nav-link">Speedy Searching</span>
+            </li>
+            <li class="nav-item">
+                <span class="nav-link">Easy Sharing</span>
+            </li>
+        </ul>
+        </div>
+        <div class="col-12 col-md-5">
+            <img class="img-fluid" src="Imagenes/illustration-features-tab-1.svg" style="margin-bottom: 5%;">
+        </div>
+        <div class="col-12 col-md-5">
+            <h2>Bookmark in one click</h2>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop inteface gives you
+                complete control over how you manage your favorite sites.
+            </p>
+            <button class="btn btn-primary">More info</button>
+        </div>
+        </div>
+    </div>
+<!--Descargas-->
+    <div class="container">
+        <h2 style="text-align:center">Download the extension</h2>
+        <p style="text-align:center">We've got more browsers in the pipeline. Please do let us know
+            if you've got a favourite you'd like us to priorize.
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-8 col-md-3">
+                <div class="card" >
+                    <div class="card-body align-items-center">
+                    <img class="card-img-top" src="Imagenes/logo-chrome.svg" style="width: 40%;">
+                    <h5 class="card-title">Add to Chrome</h5>
+                    <p class="card-text">Minimum version 62</p>
+                    <img class="card-img" src="Imagenes/bg-dots.svg" style="width: 60%; padding-bottom: 5%;">
+                    <button class="btn btn-primary">Add & Install Extension</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-3" style="margin-top: 5%;">
+                <div class="card" >
+                    <div class="card-body align-items-center">
+                    <img class="card-img-top" src="Imagenes/logo-firefox.svg" style="width: 40%;">
+                    <h5 class="card-title">Add to Firefox</h5>
+                    <p class="card-text">Minimum version 55</p>
+                    <img class="card-img" src="Imagenes/bg-dots.svg" style="width: 60%; padding-bottom: 5%;">
+                    <button class="btn btn-primary">Add & Install Extension</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-3" style="margin-top: 10%;">
+                <div class="card" >
+                    <div class="card-body align-items-center">
+                    <img class="card-img-top" src="Imagenes/logo-opera.svg" style="width: 40%;">
+                    <h5 class="card-title">Add to Opera</h5>
+                    <p class="card-text">Minimum version 46</p>
+                    <img class="card-img" src="Imagenes/bg-dots.svg" style="width: 60%; padding-bottom: 5%;">
+                    <button class="btn btn-primary">Add & Install Extension</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+<!--FAQS-->
+    <div class="container">
+        <h2 style="text-align:center">Frequently Asked Questions</h2>
+        <p style="text-align:center">Here are some of our FAQs. If you have any other questions
+            you'd like answered please feel free to email us.
+        </p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
