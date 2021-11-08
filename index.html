@@ -20,16 +20,16 @@
             <img src="Imagenes/icon-hamburger.svg" class="navbar-toggler-icon">
           </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <span class="mx-4">
+                <span class="mx-4" style="font-weight: 600 ;">
                     FEATURES
                 </span>
-                <span class="mx-4">
+                <span class="mx-4" style="font-weight: 600 ;">
                     PRINCING
                 </span>
-                <span class="mx-4">
+                <span class="mx-4" style="font-weight: 600 ;">
                     CONCTACT
                 </span>
-                <button class="btn btn-secondary mx-4">
+                <button class="btn btn-secondary mx-4" >
                     LOGIN
                 </button> 
         </div>
@@ -54,43 +54,79 @@
         <!-- Features-->
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-6">
         <h2 style="text-align:center">Features</h2>
         <p style="text-align:center">Our aim is to make it quick and easy for you to access your favorites websites.
             Your bookmarks sync between your devices so you can access them on the go.
         </p>
         </div>
         <div class="col-12 col-md-10" style="margin-bottom: 5%;">
-        <ul class="nav flex-column flex-md-row nav-tabs align-items-center justify-content-center">
-            <li class="nav-item">
-               <span class="nav-link">Simple Bookmarking</span>
+        <ul id="myTab" role="tablist" class="nav nav-tabs flex-column flex-md-row align-items-center justify-content-center">
+            <li class="nav-item" role="presentation">
+               <button class="nav-link active" id="tab-one" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab" aria-controls="one" aria-selected="true">Simple Bookmarking</button>
             </li>
-            <li class="nav-item">
-                <span class="nav-link">Speedy Searching</span>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-two" data-bs-toggle="tab" data-bs-target="#two" type="button" role="tab" aria-controls="two" aria-selected="false">Speedy Searching</button>
             </li>
-            <li class="nav-item">
-                <span class="nav-link">Easy Sharing</span>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-three" data-bs-toggle="tab" data-bs-target="#three" type="button" role="tab" aria-controls="three" aria-selected="false">Easy Sharing</button>
             </li>
         </ul>
         </div>
-        <div class="col-12 col-md-5">
-            <img class="img-fluid" src="Imagenes/illustration-features-tab-1.svg" style="margin-bottom: 5%;">
-        </div>
-        <div class="col-12 col-md-5">
-            <h2>Bookmark in one click</h2>
-            <p>Organize your bookmarks however you like. Our simple drag-and-drop inteface gives you
-                complete control over how you manage your favorite sites.
-            </p>
-            <button class="btn btn-primary">More info</button>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="tab-one">
+                <div class="row justify-content-center">
+                <div class="col-12 col-md-5">
+                <img class="img-fluid" src="Imagenes/illustration-features-tab-1.svg" style="margin-bottom: 5%;">
+                </div>
+                <div class="col-12 col-md-5 align-self-center">
+                <h2>Bookmark in one click</h2>
+                <p>Organize your bookmarks however you like. Our simple drag-and-drop inteface gives you
+                    complete control over how you manage your favorite sites.
+                </p>
+                <button class="btn btn-primary">More info</button>
+                </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="tab-two">
+                <div class="row justify-content-center">
+                <div class="col-12 col-md-5">
+                <img class="img-fluid" src="Imagenes/illustration-features-tab-2.svg" style="margin-bottom: 5%;">
+                </div>
+                <div class="col-12 col-md-5 align-self-center">
+                <h2>Intelligent search</h2>
+                <p>Our powerful search feature will help you find saved sites in no time at all. No need to
+                    trawl through all of your bookmarks.
+                </p>
+                <button class="btn btn-primary">More info</button>
+                </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="tab-three">
+                <div class="row justify-content-center">
+                <div class="col-12 col-md-5">
+                <img class="img-fluid" src="Imagenes/illustration-features-tab-3.svg" style="margin-bottom: 5%;">
+                </div>
+                <div class="col-12 col-md-5 align-self-center">
+                <h2>Share your bookmarks</h2>
+                <p>Easily share your bookmarks and collections with others. Create a shareable link that you 
+                    can send at the click of a button.
+                </p>
+                <button class="btn btn-primary">More info</button>
+                </div>
+                </div>
+            </div>
         </div>
         </div>
     </div>
 <!--Descargas-->
     <div class="container">
+        <div class="container col-12 col-md-6">
         <h2 style="text-align:center">Download the extension</h2>
         <p style="text-align:center">We've got more browsers in the pipeline. Please do let us know
             if you've got a favourite you'd like us to priorize.
         </p>
+        </div>
         <div class="row justify-content-center">
             <div class="col-8 col-md-3">
                 <div class="card" >
@@ -129,24 +165,60 @@
         
     </div>
 <!--FAQS-->
-    <div class="container">
+    <div class="container col-12 col-md-6">
         <h2 style="text-align:center">Frequently Asked Questions</h2>
         <p style="text-align:center">Here are some of our FAQs. If you have any other questions
             you'd like answered please feel free to email us.
         </p>
-        <div class="accordion" id="accordionExample">
+        <div class="accordion" id="accordionFAQS">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
+                  What is Bookmark?
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQS">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti excepturi, explicabo iure, dolorem quisquam eveniet quos totam quia hic quae quam ducimus eum. Maiores assumenda facilis dolores molestias voluptates necessitatibus!</p>
                 </div>
               </div>
             </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    How can I request a new browser?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQS">
+                  <div class="accordion-body">
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti excepturi, explicabo iure, dolorem quisquam eveniet quos totam quia hic quae quam ducimus eum. Maiores assumenda facilis dolores molestias voluptates necessitatibus!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Is there a mobile app?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQS">
+                  <div class="accordion-body">
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti excepturi, explicabo iure, dolorem quisquam eveniet quos totam quia hic quae quam ducimus eum. Maiores assumenda facilis dolores molestias voluptates necessitatibus!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    What about other Chromium browsers?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQS">
+                  <div class="accordion-body">
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti excepturi, explicabo iure, dolorem quisquam eveniet quos totam quia hic quae quam ducimus eum. Maiores assumenda facilis dolores molestias voluptates necessitatibus!</p>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
 </body>
