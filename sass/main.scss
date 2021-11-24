@@ -6,14 +6,15 @@ $card-border-radius: 5%;
 $nav-link-color: gray;
 $nav-tabs-link-active-color: black;
 $nav-tabs-link-active-border-color: white white red;
-$accordion-button-icon: url("/Imagenes/icon-arrow.svg");
-$accordion-button-active-icon:  url("/Imagenes/icon-arrow.svg");
+$nav-tabs-link-hover-border-color: transparent;
+$accordion-button-icon: url("/imagenes/icon-arrow.svg");
+$accordion-button-active-icon:  url("/imagenes/icon-arrow.svg");
 $accordion-button-active-bg: white;
 $accordion-border-width: 0;
 $accordion-color: black;
 $accordion-button-active-color: black;
 $accordion-button-focus-box-shadow: none;
-$btn-font-weight: 500;
+$btn-font-weight: 400;
 
 .accordion{
     margin-top: 10%;
@@ -23,16 +24,11 @@ $btn-font-weight: 500;
 .accordion-header {
     border-top: 1px solid lightgray;
 }
-button{
-    font-weight: 600 ;
-}
-
 p{
     color: gray;
 }
 .btn{
     box-shadow: 0 3px 5px lightgray;
-    font-weight: 600;
 }
 .card{
     margin-top: 5%;
@@ -50,6 +46,7 @@ p{
     margin-top: 5%;
     background-color: $primary;
 }
+
 #navFooter{
     padding-left: 10%;
     padding-right: 10%;
@@ -63,6 +60,10 @@ p{
         margin-bottom: 3%;
     }
 }
-
+#articulo{
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+}
 //import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
